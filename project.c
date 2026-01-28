@@ -13,30 +13,29 @@ int main() {
     scanf("\n%d", &roll_no);
     int english,maths,chemistry,physics,computer_science;
     printf("Enter marks obtained in English: ");
-    scanf("\n%d", &english);
+    scanf("%d", &english);
     printf("Enter marks obtained in Maths: ");
-    scanf("\n%d", &maths);
+    scanf("%d", &maths);
     printf("Enter marks obtained in Chemistry: ");
-    scanf("\n%d", &chemistry);
+    scanf("%d", &chemistry);
     printf("Enter marks obtained in Physics: ");
-    scanf("\n%d", &physics);
+    scanf("%d", &physics);
     printf("Enter marks obtained in Computer Science: ");
-    scanf("\n%d", &computer_science);
+    scanf("%d", &computer_science);
     int total_marks = english + maths + chemistry + physics + computer_science;
     float percentage = (total_marks / 500.0) * 100;
     char grade;
     if (percentage >= 90) {
-        grade = 'A+';
-    } else if (percentage >= 80) {
         grade = 'A';
-    } else if (percentage >= 70) {
+    } else if (percentage >= 80) {
         grade = 'B';
-    } else if (percentage >= 60) {
+    } else if (percentage >= 70) {
         grade = 'C';
-    } else if (percentage >= 40) {
+    } else if (percentage >= 60) {
         grade = 'D';
     } else if (percentage >= 33) {
         grade = 'E';
+    
     } else {
         grade = 'F';
     }
